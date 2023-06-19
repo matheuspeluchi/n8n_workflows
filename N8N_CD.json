@@ -1,0 +1,74 @@
+{
+  "name": "N8N_CD",
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "owner": {
+          "__rl": true,
+          "value": "https://github.com/matheuspeluchi",
+          "mode": "url",
+          "__regex": "https:\\/\\/github.com\\/([-_0-9a-zA-Z]+)"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "n8n_workflows",
+          "mode": "list",
+          "cachedResultName": "n8n_workflows",
+          "cachedResultUrl": "https://github.com/matheuspeluchi/n8n_workflows"
+        },
+        "events": [
+          "project"
+        ]
+      },
+      "id": "59119afd-10d5-4138-b2ff-d357376e395d",
+      "name": "Github Trigger",
+      "type": "n8n-nodes-base.githubTrigger",
+      "typeVersion": 1,
+      "position": [
+        1560,
+        320
+      ],
+      "webhookId": "01188962-7e3b-4d84-8e7d-ae01c4109d0c",
+      "credentials": {
+        "githubOAuth2Api": {
+          "id": "3",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "6b81d8f1-bc10-4620-88b7-8d1697b229a0",
+      "name": "No Operation, do nothing",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1780,
+        320
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Github Trigger": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "versionId": "e49dda8d-8c68-4275-97fb-349bea384f93",
+  "id": "1",
+  "meta": {
+    "instanceId": "2725a195d8086344b04f7b22098c370e0000355d7f8f3675a77b9f9e92148a87"
+  },
+  "tags": []
+}
