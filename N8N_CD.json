@@ -1,5 +1,5 @@
 {
-  "name": "N8N_CD",
+  "name": "N8N_CICD",
   "nodes": [
     {
       "parameters": {
