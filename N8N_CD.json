@@ -17,18 +17,13 @@
           "cachedResultName": "n8n_workflows",
           "cachedResultUrl": "https://github.com/matheuspeluchi/n8n_workflows"
         },
-        "events": [
-          "project"
-        ]
+        "events": ["project"]
       },
       "id": "59119afd-10d5-4138-b2ff-d357376e395d",
       "name": "Github Trigger",
       "type": "n8n-nodes-base.githubTrigger",
       "typeVersion": 1,
-      "position": [
-        1560,
-        320
-      ],
+      "position": [1560, 320],
       "webhookId": "01188962-7e3b-4d84-8e7d-ae01c4109d0c",
       "credentials": {
         "githubOAuth2Api": {
@@ -43,10 +38,7 @@
       "name": "No Operation, do nothing",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
-      "position": [
-        1780,
-        320
-      ]
+      "position": [1780, 320]
     }
   ],
   "pinData": {},
